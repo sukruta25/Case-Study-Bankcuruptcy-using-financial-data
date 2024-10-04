@@ -1,0 +1,50 @@
+# Key Observations:
+
+- Imbalanced Classes: even after applying smote to handle imbalance data,
+- The dataset is highly imbalanced with majority class (0) having 1980 samples and minority class (1) having only 66 samples.
+- Accuracy: The overall accuracy of the model is 96.1%, which is relatively high but can be misleading due to the class imbalance.
+
+# Precision and Recall:
+
+- Precision (for class 0): Precision is 0.97, meaning when the model predicts non-bankrupt (0), it is correct 97% of the            time.
+- Precision (for class 1): Precision is 0.05, meaning when the model predicts bankrupt (1), it is correct inly 5% of the            time.
+- Recall (for class 0): Recall is 0.99, indicating that the model correctly identifies 99% of the non-bankrupt companies.
+- Recall (for class 1): Recall is 0.02, indicating that the model correctly identifies 2% of the bankrupt companies.
+- F1-score (for class 0): F1-score is 0.98, which balances precision and recall, providing a harmonic mean between them.
+- F1-score (for class 1): F1-score is 0.02, which balances precision and recall, providing a harmonic mean between them.
+
+
+# KEY INSIGHTS AND RECOMMENDATIONS
+
+1. Debt Ratio % and Bankruptcy:
+   - Debt Ratio % shows the highest positive correlation with bankruptcy. This implies that as the Debt Ratio % increases, the         likelihood of bankruptcy also increases. 
+   - Actionable Insight: Monitoring and managing the Debt Ratio % closely is crucial. Implementing stricter debt management            policies and ensuring that debt levels remain sustainable relative to assets and income is recommended.
+
+2. Net Income to Total Assets and Bankruptcy:
+   - Net Income to Total Assets exhibits the highest negative correlation with bankruptcy. Lower values of Net Income to Total         Assets indicate higher chances of bankruptcy.
+   - Actionable Insight: Focus on improving profitability relative to total assets. Strategies may include cost management,            revenue enhancement, and efficient asset utilization.
+
+3. ROA(A) and ROA(B) before Interest and Taxes:
+   - Both ROA(A) and ROA(B) before interest and taxes show negative correlations with bankruptcy, indicating that lower                profitability ratios are associated with higher bankruptcy risks.
+   - Actionable Insight: Enhance operational efficiency and profitability metrics. This could involve optimizing resource              allocation, improving operational processes, and diversifying revenue streams.
+
+4. Current Liability to Assets:
+   - Higher values of Current Liability to Assets are associated with increased bankruptcy risk. This ratio reflects short-term o      obligations relative to total assets.
+   - Actionable Insight: Manage short-term liabilities effectively. Strategies may include negotiating favorable terms with            creditors, optimizing working capital management, and ensuring adequate cash flow for debt servicing.
+
+# Recommendations for Financial Risk Management:
+
+1. Strengthen Financial Health Monitoring:
+   - Implement regular monitoring of financial health indicators such as Debt Ratio %, Net Income to Total Assets, and ROA. Set        threshold values for these metrics and trigger alerts for early intervention if thresholds are exceeded.
+
+2. Risk Mitigation Strategies:
+   - Develop and implement robust risk mitigation strategies tailored to identified risk factors. For instance, establish              contingency plans for managing debt levels during economic downturns or adverse market conditions.
+
+3. Enhance Financial Modeling and Forecasting:
+   - Utilize advanced financial modeling techniques to forecast key financial ratios and their impact on bankruptcy risk.            - Incorporate scenario analysis to assess the resilience of the business under various economic scenarios.
+
+4. Diversification and Revenue Management:
+   - Explore diversification strategies to reduce dependency on specific revenue sources or markets. Diversification can mitigate      risks associated with fluctuations in market conditions or industry-specific challenges.
+
+5. Continuous Improvement and Adaptation:
+   - Foster a culture of continuous improvement in financial management practices. Regularly review and adapt strategies based on      evolving market dynamics, regulatory changes, and internal performance insights.
